@@ -1,3 +1,4 @@
+name: Check for tailscale updates
 on:
   schedule:
     # Run daily at 5:00 UTC
