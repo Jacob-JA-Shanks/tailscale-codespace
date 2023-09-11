@@ -6,11 +6,14 @@
   "documentationURL": "https://tailscale.com/kb/1160/github-codespaces/",
   "licenseURL": "https://github.com/tailscale/codespace/blob/main/LICENSE",
   "entrypoint": "/usr/local/sbin/tailscaled-entrypoint",
-  "capAdd": ["NET_ADMIN", "NET_RAW"],
+  "capAdd": [
+    "NET_ADMIN",
+    "NET_RAW"
+  ],
   "options": {
     "version": {
       "type": "string",
-      "default": "1.36.2",
+      "default": "1.48",
       "description": "Version of Tailscale to download"
     }
   }
