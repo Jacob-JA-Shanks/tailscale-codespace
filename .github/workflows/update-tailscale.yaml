@@ -46,8 +46,8 @@ jobs:
           jq '.options.version.default = "${{ steps.release.outputs.version }}"' src/tailscale/devcontainer-feature.json > "$tmp" && mv $tmp src/tailscale/devcontainer-feature.json
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git checkout -b "BOT/autobump-version"
           git pull
+          git checkout -b "BOT/autobump-version"
           git add src/tailscale/devcontainer-feature.json
           git commit -m "chore: update tailscale version"
           git push -u origin "BOT/autobump-version"
